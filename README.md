@@ -13,3 +13,7 @@ wget http://opensource.wandisco.com/centos/5/svn-1.7/RPMS/i386/mod_dav_svn-1.7.2
 rpm -ivh mod_dav_svn-1.7.20-1.i386.rpm
 
 yum install pysvn
+
+submin2-admin /var/lib/submin apacheconf create all
+
+ln -s /var/lib/submin/conf/apache-svn.conf /etc/apache2/conf.d/
