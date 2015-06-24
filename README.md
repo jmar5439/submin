@@ -19,5 +19,7 @@ submin2-admin /var/lib/submin apacheconf create all
 ln -s /var/lib/submin/conf/apache-svn.conf /etc/apache2/conf.d/
 
 yum install yum-plugin-replace
+
 yum replace php-common --replace-with=php54w-common
+
 Then try sudo yum install php54w again.
